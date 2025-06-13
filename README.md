@@ -3,9 +3,10 @@ a flask server that can be accessed remotely using a webui to restart your windo
 
 # Installation
 Add the below trigger conditions to windows task scheduler to start at every startup
+'''
 program\script : cmd
 arguments: /c "cd path\to\winrestart && pip install flask && python app.py > output.log 2>&1"
-
+'''
 Replace path\to\winstart with the path of the app directory.
 
 # User credentials
